@@ -317,3 +317,228 @@ table tr:first-child {
 tr:nth-child(even) {
     background-color: #eeeeee;
 }
+
+.skill-board {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-skill {
+    width: 97%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.29);
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.block {
+    width: 32%;
+    padding: 10px 10px 0 20px;
+    border-radius: 10px;
+}
+
+.main-xp {
+    background-color: #e7e5d3;
+}
+
+.level {
+    background-color: #d6ead7;
+}
+
+.rang {
+    background-color: #d3dae7;
+}
+
+.main-name p {
+    color: #25282D;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.main-info p {
+    color: #14171C;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.skill-kanban {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-kanban-item {
+    width: 32.5%;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.section-name {
+    padding: 15px 0 2px 20px;
+}
+
+.plan-name {
+    background-color: #f2ece1;
+    border-bottom: solid 5px #f1d196;
+}
+
+.section-name p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.studying-name {
+    background-color: #f2e1ed;
+    border-bottom: solid 5px #f2a1da;
+}
+
+.done-name {
+    background-color: #e1f1f2;
+    border-bottom: solid 5px #92e3e9;
+}
+
+.skill-item {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.16);
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+}
+
+.item-name p {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.status-xp {
+    display: flex;
+    gap: 15px;
+}
+
+.status-xp p {
+    font-size: 13px;
+    font-weight: 550;
+}
+
+.status p {
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.status-plan p {
+    background-color: #f2ece1;
+}
+
+.status-studying p {
+    background-color: #f2e1ed;
+}
+
+.status-done p {
+    background-color: #e1f1f2;
+}
+
+.xp p {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e0e6ed;
+}
+
+.progress-bar-backround {
+    width: 100%;
+    background: #ebeef3;
+    border-radius: 15px;
+}
+
+.progress-bar-percent {
+    width: 70%;
+    background: #4875f3;
+    border-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.progress-bar-main {
+    margin-bottom: 20px;
+}
+
+.skill-done-percent {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    border-top: #e1e2e4 1px solid;
+}
+
+#services {
+    background: radial-gradient(circle at center, #cfe2ff 0%, #e7f1ff 45%, #f8fafc 100%);
+    background-size: 100% 100%;
+    background-position: center;
+    animation: paslaugu-pulsavimas 2s ease-in-out infinite;
+}
+
+@keyframes paslaugu-pulsavimas {
+
+    0%,
+    100% {
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-size: 50% 50%;
+    }
+}
+
+.figure {
+    display: flex;
+    gap: 50px;
+}
+
+.figura-apskritimas {
+    width: 110px;
+    height: 110px;
+    background-color: rgba(5, 99, 187, 0.12);
+    border: 2px solid rgba(5, 99, 187, 0.25);
+    border-radius: 50%;
+    animation: figuros-didejimas 5s ease-in-out infinite;
+}
+
+.figura-kvadratas {
+    width: 70px;
+    height: 70px;
+    border: 3px solid rgba(25, 135, 84, 0.25);
+    border-radius: 12px;
+    animation: figuros-sukimasis 12s linear infinite;
+}
+
+@keyframes figuros-didejimas {
+
+    0%,
+    100% {
+        transform: scale(0.85);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes figuros-sukimasis {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
