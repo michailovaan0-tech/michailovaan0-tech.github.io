@@ -307,6 +307,7 @@
 
     </section><!-- /Resume Section -->
 
+
     <section id="skill-board" class="skill-board">
       <div class="container section-title" data-aos="fade-up">
         <h2>Progresas</h2>
@@ -314,174 +315,85 @@
 
       <div class="main-skill">
         <div class="blocks">
+
           <div class="block main-xp">
             <div class="main-name">
               <p>Bendras XP:</p>
             </div>
             <div class="main-info">
-              <p>210</p>
+              <p id="total-xp">0</p>
             </div>
           </div>
+
           <div class="block level">
             <div class="main-name">
               <p>Lygis:</p>
             </div>
             <div class="main-info">
-              <p>3</p>
+              <p id="current-level">1</p>
             </div>
           </div>
+
           <div class="block rang">
             <div class="main-name">
               <p>Rangas:</p>
             </div>
             <div class="main-info">
-              <p>Specialistas</p>
+              <p id="current-rank">Pradedantysis</p>
             </div>
           </div>
+
         </div>
+
         <div class="progress-bar-main">
           <div class="progress-title">
             <p>Progresas iki kito lygio</p>
           </div>
+
           <div class="progress-bar-backround">
-            <div class="progress-bar-percent">70%</div>
+            <div class="progress-bar-percent" id="xp-progress">0%</div>
           </div>
         </div>
+
         <div class="skill-done-percent">
           <div class="skill">
-            <p>Įgūdžiai: <b>8</b></p>
+            <p>Įgūdžiai: <b id="total-skills">0</b></p>
           </div>
           <div class="done">
-            <p>Atlikta: <b>4</b></p>
+            <p>Atlikta: <b id="done-skills">0</b></p>
           </div>
           <div class="percent">
-            <p>Procentai: <b>50%</b></p>
+            <p>Procentai: <b id="done-percent">0%</b></p>
           </div>
         </div>
       </div>
 
       <div class="skill-kanban">
+
         <div class="skill-kanban-item">
           <div class="section-name plan-name">
             <p>Planuojama</p>
           </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>Daugiasluoksnių PCB projektavimas</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-plan">
-                <p>Būsena: Planuojama</p>
-              </div>
-              <div class="xp">
-                <p>XP: 20</p>
-              </div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>Elektroninių grandinių modeliavimas</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-plan">
-                <p>Būsena: Planuojama</p>
-              </div>
-              <div class="xp">
-                <p>XP: 20</p>
-              </div>
-            </div>
-          </div>
+          <div id="plan-list"></div>
         </div>
+
         <div class="skill-kanban-item">
           <div class="section-name studying-name">
             <p>Mokomasi</p>
           </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>Mikrokontrolerių programavimas</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-studying">
-                <p>Būsena: Mokomasi</p>
-              </div>
-              <div class="xp">
-                <p>XP: 50</p>
-              </div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>Skaitmeninis signalų apdorojimas</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-studying">
-                <p>Būsena: Mokomasi</p>
-              </div>
-              <div class="xp">
-                <p>XP: 30</p>
-              </div>
-            </div>
-          </div>
+          <div id="studying-list"></div>
         </div>
+
         <div class="skill-kanban-item">
           <div class="section-name done-name">
             <p>Atlikta</p>
           </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>SMD ir THT komponentų litavimas</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-done">
-                <p>Būsena: Atlikta</p>
-              </div>
-              <div class="xp">
-                <p>XP: 30</p>
-              </div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>Automatizuotas plokščių testavimas</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-done">
-                <p>Būsena: Atlikta</p>
-              </div>
-              <div class="xp">
-                <p>XP: 30</p>
-              </div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>Matavimų ir signalų analizė</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-done">
-                <p>Būsena: Atlikta</p>
-              </div>
-              <div class="xp">
-                <p>XP: 30</p>
-              </div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="item-name">
-              <p>Elektrinių schemų braižymas ir dokumentacija</p>
-            </div>
-            <div class="status-xp">
-              <div class="status status-done">
-                <p>Būsena: Atlikta</p>
-              </div>
-              <div class="xp">
-                <p>XP: 30</p>
-              </div>
-            </div>
-          </div>
+          <div id="done-list"></div>
         </div>
+
       </div>
     </section>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -787,24 +699,44 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200" novalidate>
               <div class="row gy-4">
 
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
+                <div class="col-md-6">
+                  <input type="text" name="surname" class="form-control" placeholder="Your Surname" required="">
+                </div>
+
                 <div class="col-md-6 ">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <div class="col-md-6">
+                  <input type="text" name="tel" class="form-control" maxlength="14" placeholder="Your Number"
+                    required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <input type="text" class="form-control" name="address" placeholder="Address" required="">
+                </div>
+
+                <div class="slidecontainer">
+                  <p class="slider-text">Dizaino įvertinimas (1–10)</p>
+                  <input type="range" name="design" min="1" max="10" value="5" step="1" class="slider">
+                  <p class="slider-value">Reikšmė: <span></span></p>
+                </div>
+                <div class="slidecontainer">
+                  <p class="slider-text">Funkcionalumo įvertinimas (1–10)</p>
+                  <input type="range" name="functionality" min="1" max="10" value="5" step="1" class="slider">
+                  <p class="slider-value">Reikšmė: <span></span></p>
+                </div>
+                <div class="slidecontainer">
+                  <p class="slider-text">Turinio aiškumas (1–10)</p>
+                  <input type="range" name="clarity" min="1" max="10" value="5" step="1" class="slider">
+                  <p class="slider-value">Reikšmė: <span></span></p>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -812,13 +744,15 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" disabled>Siųsti</button>
+                  <button type="button" id="clear-btn">Išvalyti</button>
                 </div>
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
 
+          </div><!-- End Contact Form -->
+          <div id="form-result" class="mt-4"></div>
         </div>
 
       </div>
@@ -863,7 +797,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script>-->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -875,6 +809,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/custom.js"></script>
+
+  <script src="assets/js/skills.js"></script>
+
 
 </body>
 

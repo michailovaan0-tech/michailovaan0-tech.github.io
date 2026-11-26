@@ -542,3 +542,98 @@ tr:nth-child(even) {
         transform: rotate(360deg);
     }
 }
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04a5aa;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04a5aa;
+    cursor: pointer;
+}
+
+#form-result {
+    padding-left: 370px;
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.field-error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.contact .php-email-form button[type=button] {
+    color: #14171C;
+    background: #b6b49f;
+    border: 3px solid #25282D;
+    transition: 0.4s;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.contact .php-email-form button[type=button]:hover {
+    color: #e2e4e7;
+    background: #545e56;
+    border: 3px solid #25282D;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(56, 85, 113, 0.25);
+}
+
+.contact .php-email-form button[type=button]:active {
+    background-color: #37403F;
+    color: #e2e4e7;
+    border: 3px solid #25282D;
+    transform: translateY(1px) scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.skill-select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.progress-bar-percent {
+    transition: width 0.4s ease;
+    min-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#plan-list,
+#studying-list,
+#done-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
