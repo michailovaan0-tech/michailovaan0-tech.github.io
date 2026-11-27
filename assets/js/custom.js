@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sliders = form.querySelectorAll(".slider");
     const fields = [name, surname, email, tel, address];
 
-    // 1. Slankiklių reikšmių atnaujinimas
+    // Slankiklių reikšmių atnaujinimas
     function updateSliders() {
 
         sliders.forEach(function (slider) {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 2. Telefono numerio formatavimas
+    // Telefono numerio formatavimas
     function formatPhone() {
 
         let digits = tel.value.replace(/\D/g, "");
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tel.value = formatted;
     }
 
-    // 3. Klaidos pranešimo atvaizdavimas
+    // Klaidos pranešimo atvaizdavimas
     function showError(field, message) {
 
         let error = field.parentElement.querySelector(".field-error");
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         field.classList.toggle("invalid-field", message !== "");
     }
 
-    // 4. Duomenų validacija
+    // Duomenų validacija
     function validateField(field) {
 
         const value = field.value.trim();
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return "";
     }
 
-    // 5. Visos formos tikrinimas
+    // Visos formos tikrinimas
     function validateForm() {
 
         let valid = true;
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return valid;
     }
 
-    // 6. Validacija realiu laiku
+    // Validacija realiu laiku
     fields.forEach(function (field) {
 
         field.addEventListener("input", function () {
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // 7. Slankiklių įvykiai
+    // Slankiklių įvykiai
     sliders.forEach(function (slider) {
 
         slider.addEventListener("input", function () {
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // 8. Formos duomenų apdorojimas
+    // Formos duomenų apdorojimas
     form.addEventListener("submit", function (event) {
 
         event.preventDefault();
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // 9. Formos išvalymas
+    // Formos išvalymas
     clearBtn.addEventListener("click", function () {
 
         form.reset();
@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // 10. Pradinė formos būsena
+    // Pradinė formos būsena
     updateSliders();
     validateForm();
 
